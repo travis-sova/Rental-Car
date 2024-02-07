@@ -43,6 +43,6 @@ To solve the task, proceed as follows:
 - Use consistent indentation.
 - Separate long functions into smaller parts. 
 - Remove magic numbers - create constants. 
-- Remove unused code. 
+- Remove unused or unnecessary code. 
 
 - Last but not least: Your code should still work after the refactoring!
