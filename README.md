@@ -46,3 +46,14 @@ To solve the task, proceed as follows:
 - Remove unused or unnecessary code. 
 
 - Last but not least: Your code should still work after the refactoring!
+
+## 16.02 Tunniülesanne
+- Tänase tunni ülesandeks on paarisprogrammeerimine ja TDD.
+- Palun jagunege paaridesse ja võtke üks versioon Car Rental refaktoreeritud ja testitud koodist
+- Lisage uus funktsionaalsus kasutades TDD-d:
+-- Weekday/Weekend Pricing:
+--- Write tests to ensure that pricing is different for weekdays and weekends. Write tests to verify correctly determined price based on the rental period.
+--- Implement functionality to have different pricing for weekdays and weekends. Weekdays have regular price and weekend days have 5% price increase. 
+- Töö jaotus: 
+-- Üks partneritest kirjutab testi. 
+-- Teine kirjutab koodi, et test läbi läheks.
