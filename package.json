@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "npx nodemon -e html index.js",
+        "dev": "npx nodemon -e html,js index.js",
         "test": "jest",
         "cover": "jest --coverage"
     },

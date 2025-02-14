@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const rental = require('./rentalPrice');
 const fs = require('fs');
+const { time } = require('console');
 
 const app = express();
 const port = 3000;
@@ -17,12 +18,11 @@ const resultHtml = fs.readFileSync('result.html', 'utf8');
 app.post('/', (req, res) => {
     const post = req.body;
     const result = rental.price(
-        String(post.pickup),
-        String(post.dropoff),
         Date.parse(post.pickupdate),
         Date.parse(post.dropoffdate),
         String(post.type),
-        Number(post.age)
+        Number(post.age),
+        Number(post.license)
     );
     res.send(formHtml + resultHtml.replaceAll('$0', result));
 });
@@ -34,4 +34,5 @@ app.get('/', (req, res) => {
 // Start the server
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
+    console.log(Date());
 });
